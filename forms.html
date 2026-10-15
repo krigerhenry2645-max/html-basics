@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #e9d8d8;
+        }
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+        }
+        .from-label {
+            margin-top: 15px;
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html">Home</a>
+    </a>
+    <a href="tables.html">Tables</a>
+    <a href="forms.html">Forms</a>
+    <a href="divs.html">Divs</a>
+    <a href="images">Images</a>    
+    <a href="https://www.tiktok.com/" target="_blank">
+        <img src="images/icons8-linux-100.png" alt=" icon" width="50">
+    <!-- Form input text,email,password,phone,checkbox,radio,select,dateofbirth,textarea -->
+     <form action="">
+        <label for="full_name">Full Name</label>
+        <input type="text" name="full_name" id="full_name" placeholder="Hello John Doe">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="john.doe@example.com" required>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="enter your password" required>
+        <label for="phone">Phone</label>
+        <input type="tel" name="phone" id="phone" placeholder="07 123 4567">
+
+        <p>Selected sports:</p>
+
+        <label for="tennis">Tennis</label>
+        <input type="checkbox" name="tennis" id="tennis" value="tennis">
+
+        <label for="football">Football</label>
+        <input type="checkbox" name="football" id="football" value="football">
+
+        <label for="basketball">Basketball</label>
+        <input type="checkbox" name="basketball" id="basketball" value ="basketball">
+
+        <p>Selected gender:</p>
+
+        <label class="form-label" for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="male">
+
+        <label class="form-label" for="female">Female</label>
+        <input type="radio" name="gender" id="female" value="female">
+
+        <label for="country">Country</label>
+
+        <select name="country" id="country">
+            <option value="">Select an option</option>
+            <option value="Nairobi">Nairobi</option>
+            <option value="Kisumu">Kisumu</option>
+            <option value="Mombasa">Mombasa</option>
+        </select>
+<label for="dob">Date of Birth</label>
+        <input type="date" name="dob" id="dob" placeholder="dd/mm/yyyy"required min="1900-01-01" max="2024-12-31" >
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
