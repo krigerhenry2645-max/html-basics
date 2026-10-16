@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Isometra&family=Sancreek&display=swap');
+nav {
+    background-color: #ebb6b6;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+}
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+/* You missed the dot here -> nav-item ul */
+.nav-item ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+.nav-item ul li {
+    margin-right: 20px;
+}
+.nav-item ul li a {
+    text-decoration: none;
+    color: #333;
+    font-family: 'Isometra', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.nav-item ul li a:hover {
+    color: #2e7d32;
+    text-decoration: underline;
+}
+.nav-item img {
+    width: 50px;
+    height: auto;
+}
+/* git add . */
+/* git commit -m "Update nav bar" */
+/* git push */
+</style>
+
+</head>
+<body>
+     <nav> 
+        <div class="nav-item">
+            <img src="images/icons8-linux-100.png" alt="Company Logo" width="50">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="forms.html">Team</a></li>
+            </ul>
+        </div>
+     </nav>
+</body>
+</html>
