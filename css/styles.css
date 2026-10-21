@@ -1,0 +1,60 @@
+body {
+    background-color: #e47878;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+* {
+    box-sizing: border-box;
+}
+.row {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    flex-wrap: wrap; /* very important for responsiveness */
+    gap: 20px;
+}
+.col {
+    width: 23%;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    background: white;
+}
+p {
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Tablet - 768px to 1024px */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .row {
+        flex-direction: column;
+    }
+    .col {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: 16px;
+        color: #666;
+    }
+}
+
+/* Phone - BELOW 768px - this must be OUTSIDE */
+@media screen and (max-width: 767px) {
+    .row {
+        flex-direction: column;
+    }
+    .col {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: 14px;
+        color: #999;
+    }
+}
